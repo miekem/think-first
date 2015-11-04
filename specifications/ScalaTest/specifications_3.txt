@@ -1,0 +1,6 @@
+  scenario("an error message is given if the patient cannot be found")({
+    Given(" a patient that is not registered")
+    When("I ask for the details of the patient using his social security number")
+    Then("an error message is given")
+    And("no details are given")
+  })
