@@ -1,9 +1,0 @@
-  scenario("the physical data of the most recent examination are given")({
-    Given("a patient with the social security number 93051822361")
-    And("on 2000-04-17 the patient had a length of 180 cm and a weight of 80000 gr")
-    And("the patient is registered")
-    And("on 10-04-2000 the patient had a length of 180 cm and a weight of 75000 gr but these data were added later")
-    When("I ask for the details of the patient using his social security number")
-    Then("the length 180, weight 80000, and date of the examination date 2000-04-17 are given")
-    And("the calculated bmi 24.69 is based on these data")
-  })
