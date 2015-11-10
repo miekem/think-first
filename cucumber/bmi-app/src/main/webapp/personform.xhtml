@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+    <ui:composition template="/template/basicTemplate.xhtml">
+        <ui:define name="content">
+
+            <h:form id="personForm">
+                <ui:include src="personfields.xhtml"></ui:include>
+
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-10">
+                        <h:commandButton id="actionSave" action="#{personBean.savePerson}" value="#{msgs['label.ok']}" rendered="#{personBean.newPerson}"/>
+                        <h:commandButton id="actionCancel" action="#{personBean.cancel}" immediate="true" value="#{msgs['label.cancel']}" />
+                    </div>
+                </div>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
+

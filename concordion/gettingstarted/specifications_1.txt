@@ -1,0 +1,48 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<head>
+<link href="concordion.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8"></meta>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+$(function() {
+	$("#accordion").accordion();
+});
+</script>
+</head>
+<body>
+    <h1>Show patient details</h1>
+	<h2>Narrative</h2>
+	<div>
+	<p>In order to check the physical condition of a patient</p>
+	<p>As a caretaker</p>
+	<p>I want to consult his/her personal details</p>
+	</div>
+	<h2>Acceptance Criteria</h2>
+    <h3>Scenario: the personal details of a registered patient are given</h3>
+    <div>
+		<p>
+			Given a patient with the social security number 93051822361, gender male and birthdate 1993-05-18
+		</p>
+		<p>
+			And on 2000-04-10 the patient had a length of 180 cm and a weight of 75000 gr
+		</p>
+		<p>
+			And the patient is registered
+		</p>
+		<p>
+			When I ask for the details of the patient using his social security number
+		</p>
+		<p>
+			Then the personal details social security number, gender and birthdate are given
+		</p>
+		<p>
+			And the examination details length, weight and last examination date are given
+		</p>
+		<p>
+			And the calculated bmi 23.15 is given
+		</p>
+       <hr></hr>
+  	</div>
+ </body>
+</html>

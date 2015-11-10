@@ -1,0 +1,24 @@
+    <h3>Scenario: the physical data of the most recent examination are given</h3>
+    <div>
+		<p>
+			Given a patient with the social security number 93051822361
+		</p>
+		<p>
+			And on 2000-04-17 the patient had a length of 180 cm and a weight of 80000 gr
+		</p>
+		<p>
+			And the patient is registered
+		</p>
+		<p>
+			And on 2000-04-10 the patient had a length of 180 cm and a weight of 75000 gr but these data were added later
+		</p>
+		<p>
+			When I ask for the details of the patient using his social security number
+		</p>
+		<p>
+			Then the length 180, weight 80000, and date of the examination 2000-04-17 are given
+		</p>
+		<p>
+			And the calculated bmi 24.69 is based on these data
+		</p>
+       <hr></hr>

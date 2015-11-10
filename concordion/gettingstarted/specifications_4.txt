@@ -1,0 +1,42 @@
+	<h3>Scenario Outline: the bmi is rounded to 2 digits</h3>
+	<div>
+		<p>Given a patient that is registered with a length in cm and weight in gr</p>
+		<p>When I ask for the details of the patient</p>
+		<p>Then the bmi is given rounded to 2 digits</p>
+		<div class="example">
+			<h3>Examples</h3>
+			<table>
+				<tr>
+					<th>length</th>
+					<th>weight</th>
+					<th>bmi</th>
+				</tr>
+				<tr>
+					<td>160</td>
+					<td>65000</td>
+					<td>25.39</td>
+				</tr>
+				<tr>
+					<td>160</td>
+					<td>65001</td>
+					<td>25.39</td>
+				</tr>
+				<tr>
+					<td>160</td>
+					<td>65009</td>
+					<td>25.39</td>
+				</tr>
+				<tr>
+					<td>180</td>
+					<td>75000</td>
+					<td>23.15</td>
+				</tr>
+				<tr>
+					<td>180</td>
+					<td>75000</td>
+					<td>23.15</td>
+				</tr>
+			</table>
+		</div>
+       <hr></hr>
+  	</div>

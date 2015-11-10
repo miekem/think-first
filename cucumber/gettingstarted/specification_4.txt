@@ -1,0 +1,12 @@
+	Scenario Outline: the bmi is rounded to 2 digits
+		Given a patient that is registered with a length <length> cm and weight <weight> gr
+		When I ask for the details of the patient
+		Then the bmi <bmi> is given rounded to two digits
+
+		Examples:
+			|length	|weight	|bmi	|
+			|160	|65000	|25.39	|
+			|160	|65001	|25.39	|
+			|160	|65009	|25.39	|
+			|180	|75000	|23.15	|
+			|180	|75009	|23.15	|

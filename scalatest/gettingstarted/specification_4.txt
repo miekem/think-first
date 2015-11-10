@@ -1,0 +1,13 @@
+scenario("the bmi is rounded to 2 digits")({
+    val examples = Table(
+      ("length", "weight", "date", "bmi"),
+      (160, 65000, "2000-04-10", 25.39),
+      (160, 65001, "2000-04-11", 25.39),
+      (160, 65009, "2000-04-12", 25.39),
+      (180, 75000, "2000-04-13", 23.15),
+      (180, 75009, "2000-04-14", 23.15))
+
+        Given("the patient has a length " + length + " cm and weight " + weight + " gr on " + date)
+        When("I ask for the details of the patient")
+        Then("the bmi " + bmi + " is given rounded to 2 digits")
+  })

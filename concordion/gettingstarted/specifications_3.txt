@@ -1,0 +1,15 @@
+	<h3>Scenario: an error message is given if the patient cannot be found</h3>	<div>
+		<p>
+			Given a patient that is not registered
+		</p>
+		<p>
+			When I ask for the details of the patient using his social security number
+		</p>
+		<p>
+			Then an error message is given
+		</p>
+		<p>
+			And no details are given
+		</p>
+		<hr></hr>
+	</div>
