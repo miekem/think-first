@@ -4,5 +4,5 @@
 		And the patient is registered
 		And on "2000-04-10" the patient had a length of 180 cm and a weight of 75000 gr but these data were added later
 		When I ask for the details of the patient using his social security number
-		Then the length 180, weight 80000, and date of the examination "17-04-2000" are given
+		Then the length 180, weight 80000, and date of the examination "2000-04-17“ are given
 		And the calculated bmi 24.69 is based on these data
